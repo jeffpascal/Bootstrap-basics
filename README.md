@@ -73,3 +73,23 @@ Learning bootstrap
 ```
 
 - The w-100 class simply sets the width of the element to 100%, forcing it to take up all the available horizontal space. Bootstrap offers a range of classes at a 25% interval: w-25, w-50, w-75, and w-100. Their vertical equivalents are h-25, h-50, h-75, and h-100.
+
+```html
+<div class="container">
+    <h1>Our Print Sizes</h1>
+    <div class="row justify-content-center">
+      <div class="col-sm-6 col-md-3">Small</div>
+      <div class="col-sm-6 col-md-3">Medium</div>
+    </div>
+    <div class="row justify-content-start">
+      <div class="col-sm-6 col-md-3">Large</div>
+      <div class="col-sm-6 col-md-3">Extra Large</div>
+    </div>
+    <div class="row justify-content-end">
+      <div class="col-sm-6 col-md-3">Enormous</div>
+      <div class="col-sm-6 col-md-3">Extra Enormous</div>
+    </div>
+</div>
+```
+
+- The alignment of each row can be customized, irrespective of the alignment of the previous or succeeding rows, that is, using the justify-content-start, justify-content-center, and justify-content-end classes, columns can be left-, right-, and center-aligned. For example, let's revert to our simple, unnested grid and arrange the grid in such a way that the columns on the first row are center-aligned and align the columns on the second and third row to the right and to the left, respectively. To do so, we simply add the justify-content-start class alongside the row to the first element, and the justify-content-start and justify-content-end classes to the following rows:
